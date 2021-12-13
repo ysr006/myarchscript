@@ -39,6 +39,8 @@ yazınız.
 
 # 1.sh dosyasını çalıştırınız.
 
+#sh /myarchscript/1.sh
+
 # Bölümleme yapmak için  cfdisk ile arayüzle biçimlendirebilirsiniz. 
 
 300MB primary efi dosya sistemi
@@ -115,7 +117,11 @@ kullanıcı oluşturmak için
 
 #useradd -m -G wheel -s /bin/bash archlinux
 
-yazınız. siz dilerseniz archlinux yerine istediğiniz adı yazabilirsiniz.
+yazınız. siz dilerseniz archlinux yerine istediğiniz adı yazabilirsiniz.srchlinux isimli kullanıcıya sudo yetkisi vermek için
+
+#echo "archlinux ALL=(ALL) ALL" >> /etc/sudoers
+
+yazınız.
 
 # masaüstü ortamı oluşturmak için amd ekran kartınız varsa 4amd.sh intel ekran kartınız varsa 4intel.sh dosyasını çalıştırınız.
 
