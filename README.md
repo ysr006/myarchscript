@@ -1,6 +1,6 @@
 # myarchscript
 
-Bu Arch Linux kurulumunu pratik ve hızlıca yapmak için en basit düzeyde yazımış scriptir.
+Bu Arch Linux kurulumunu pratik ve hızlıca yapmak için en basit düzeyde yazımış scriptir. Uefi kurulum lightdm login servisi ve xfce4 masaüstü ortamıyla kurulum yapılacaktır. Daha sonra diğer masaütü ortamı ve login servislerini ekleyeceğim.
 
 Kurulum için;
 
@@ -87,3 +87,15 @@ tr_TR ISO-8859-9
 Ctrl+X ile çıkış yapınız.Kaydedilsin mi soruna "Y" tuşuna başınız ve hiçbir değişiklik yapmadan enter tuşuna basınız.
 
 # 3.sh dosyasını çalıştırınız.
+
+#passwd
+
+komutu ile root için şifre oluşturun.
+
+kullanıcı oluşturmak için 
+
+#useradd -m -G wheel -s /bin/bash archlinux
+
+yazınız. siz dilerseniz archlinux yerine istediğiniz adı yazabilirsiniz.
+
+# masaüstü ortamı oluşturmak için 4.sh dosyasını çalıştırınız.
