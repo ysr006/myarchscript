@@ -22,9 +22,18 @@ iwd#exit
 
 # Bölümleme yapmak için  cfdisk ile arayüzle biçimlendirebilirsiniz. 
 
-Alternatif olarak gdisk kullanabilirsiniz.Gdisk ile biçimlendirme yapmak için
+300MB primary efi dosya sistemi
+
+8GB primary linux swap dosya sistemi (swap boyutunu değiştirebilir ya da swap alanı vermeyebilirsiniz.)
+
+geri kalan alan primary linux dosya sistemi
+
+Alternatif olarak gdisk kullanabilirsiniz.Gdisk ile biçimlendirme yapmak için (bu bölüm alternatif yöntemdir. cfdisk yaptıysanız bu kısmı atlayınız
 
 #gdisk /dev/sda
+
+* efi için
+
 : n
 
 :
@@ -33,7 +42,7 @@ Alternatif olarak gdisk kullanabilirsiniz.Gdisk ile biçimlendirme yapmak için
 
 : ef00
 
-swap için: (swap boyutunu değiştirebilirsiniz.)
+* swap için: (swap boyutunu değiştirebilir ya da swap alanı vermeyebilirsiniz.)
 
 : n
 
