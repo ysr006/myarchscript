@@ -67,11 +67,11 @@ yazılır. Alta ininiz.
 
 #tr_TR ISO-8859-9
 
-Bu ikisinin başındaki # işaretini kaldırınız.
+Bu ikisinin başındaki # işaretini kaldırınız. Şu şekilde olmalıdır.
 
-#tr_TR.UTF-8 UTF-8
+tr_TR.UTF-8 UTF-8
 
-#tr_TR ISO-8859-9
+tr_TR ISO-8859-9
 
 Ctrl+X ile çıkış yapınız.Kaydedilsin mi soruna "Y" tuşuna başınız ve hiçbir değişiklik yapmadan enter tuşuna basınız.
 
