@@ -111,3 +111,13 @@ ile bağları kaldırdıktan sonra
 #restart
 
 yazınız.
+
+Kurulumunuz. Tamamlandı.
+
+xfce4 masaüstü açıldığında türkçe klavye probleminiz varsa
+
+$setxkbmap tr
+
+$ sudo localectl set-x11-keymap tr 
+
+yazarak düzeltebilirsiniz.
