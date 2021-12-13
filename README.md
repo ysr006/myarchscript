@@ -4,9 +4,12 @@ Bu Arch Linux kurulumunu pratik ve hızlıca yapmak için en basit düzeyde yaz�
 
 Kurulum için;
 
-# Önce 1.sh dosyasını çalıştırınız.
+# Klavye türkçe yapmak için
 
-# İnternete bağlama için
+#loadkeys trq
+
+İnternete bağlanmak için
+
 #iwctl
 
 iwd# wsc wlan0 push-button 1
@@ -19,6 +22,16 @@ pashhrase:********
 
 iwd#exit
 #networkctl reconfigure wlan0
+
+Script ve gerekli dosyaları indirmek için
+
+#pacman -Sy
+
+#pacman -S pacman-contrib sh nano git
+
+Yazınız.
+
+# 1.sh dosyasını çalıştırınız.
 
 # Bölümleme yapmak için  cfdisk ile arayüzle biçimlendirebilirsiniz. 
 
