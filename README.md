@@ -20,7 +20,9 @@ pashhrase:********
 iwd#exit
 #networkctl reconfigure wlan0
 
-* Bölümleme yapmak için gdisk kullanılır.
+* Bölümleme yapmak için  cfdisk ile arayüzle biçimlendirebilirsiniz. 
+
+Alternatif olarak gdisk kullanabilirsiniz.Gdisk ile biçimlendirme yapmak için
 
 #gdisk /dev/sda
 : n
