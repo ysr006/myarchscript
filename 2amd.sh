@@ -1,7 +1,7 @@
 cd
 mkdir /mnt/boot
 mkfs.fat -F 32 /dev/sda1
-mkswap /dev/sda2.
+mkswap /dev/sda2
 mkfs.ext4 /dev/sda3
 swapon /dev/sda2
 mount /dev/sda3 /mnt
