@@ -75,4 +75,4 @@ tr_TR ISO-8859-9
 
 Ctrl+X ile çıkış yapınız.Kaydedilsin mi soruna "Y" tuşuna başınız ve hiçbir değişiklik yapmadan enter tuşuna basınız.
 
-*
+*3.sh dosyasını çalıştırınız.
