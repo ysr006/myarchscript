@@ -8,7 +8,7 @@ swapon /dev/sda2
 mount /dev/sda3 /mnt
 mount /dev/sda1 /mnt/boot
 genfstab -U /mnt >> /mnt/etc/fstab
-pacstrap /mnt base base-devel linux linux-firmware amd-ucode networkmanager nano
+pacstrap /mnt base base-devel linux linux-firmware amd-ucode networkmanager nano sh
 cp -r myarchscript /mnt
 arch-chroot /mnt
 ln -sf /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
