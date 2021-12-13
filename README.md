@@ -64,7 +64,7 @@ linux bölümü için:
 
 # Amd için 2amd.sh intel için 2intel.sh komutunu çalıştırınız. Eğer işlemcinizin modelini bilmiyorsanız
 
-#lspci -nn |grep "microde"
+#lspci -nn |grep "IOMMU"
 
 komutuyla öğrenebilirsiniz.
 
