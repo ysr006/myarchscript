@@ -98,7 +98,13 @@ kullanıcı oluşturmak için
 
 yazınız. siz dilerseniz archlinux yerine istediğiniz adı yazabilirsiniz.
 
-# masaüstü ortamı oluşturmak için 4.sh dosyasını çalıştırınız.
+# masaüstü ortamı oluşturmak için amd ekran kartınız varsa 4amd.sh intel ekran kartınız varsa 4intel.sh dosyasını çalıştırınız.
+
+eğer ekran kartınzızn modelini bilmiyorsanız
+
+#lspci -nn |grep "VGA"
+
+komutuyla öğrenebilirsiniz.
 
 arch-chroot komutundan çıkıs yapmak için
 
