@@ -4,9 +4,9 @@ Bu Arch Linux kurulumunu pratik ve hızlıca yapmak için en basit düzeyde yaz�
 
 Kurulum için;
 
-* Önce 1.sh dosyasını çalıştırınız.
+# Önce 1.sh dosyasını çalıştırınız.
 
-* İnternete bağlama için
+# İnternete bağlama için
 #iwctl
 
 iwd# wsc wlan0 push-button 1
@@ -20,7 +20,7 @@ pashhrase:********
 iwd#exit
 #networkctl reconfigure wlan0
 
-* Bölümleme yapmak için  cfdisk ile arayüzle biçimlendirebilirsiniz. 
+# Bölümleme yapmak için  cfdisk ile arayüzle biçimlendirebilirsiniz. 
 
 Alternatif olarak gdisk kullanabilirsiniz.Gdisk ile biçimlendirme yapmak için
 
@@ -53,7 +53,7 @@ linux bölümü için:
 
 :
 
-* Amd için 2amd.sh intel için 2intel.sh komutunu çalıştırınız. Eğer işlemcinizin modelini bilmiyorsanız
+# Amd için 2amd.sh intel için 2intel.sh komutunu çalıştırınız. Eğer işlemcinizin modelini bilmiyorsanız
 
 #lspci -nn |grep "microde"
 
@@ -77,4 +77,4 @@ tr_TR ISO-8859-9
 
 Ctrl+X ile çıkış yapınız.Kaydedilsin mi soruna "Y" tuşuna başınız ve hiçbir değişiklik yapmadan enter tuşuna basınız.
 
-*3.sh dosyasını çalıştırınız.
+# 3.sh dosyasını çalıştırınız.
