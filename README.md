@@ -19,22 +19,22 @@ iwd#exit
 * Bölümleme yapmak için gdisk kullanılır.
 
 #gdisk /dev/sda
-# n
-#
-# +300M
-# ef00
+: n
+:
+: +300M
+: ef00
 
 swap için: (swap boyutunu değiştirebilirsiniz.)
 
-# n
-# 
-# +8G
-# 8200
+: n
+:
+: +8G
+: 8200
 
 linux bölümü için:
-# n
-#
-#
-#
+: n
+:
+:
+:
 
 * Sonraki bölümde
