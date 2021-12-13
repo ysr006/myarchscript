@@ -8,9 +8,13 @@ Kurulum için;
 
 * İnternete bağlama için
 #iwctl
-iwd# wsc wlan0 push-button 1.
+
+iwd# wsc wlan0 push-button 1
+
 iwd# station scan
+
 iwd# station wlan0 SDDI_ISMI
+
 pashhrase:********
 
 iwd#exit
@@ -20,21 +24,31 @@ iwd#exit
 
 #gdisk /dev/sda
 : n
+
 :
+
 : +300M
+
 : ef00
 
 swap için: (swap boyutunu değiştirebilirsiniz.)
 
 : n
+
 :
+
 : +8G
+
 : 8200
 
 linux bölümü için:
+
 : n
+
 :
+
 :
+
 :
 
 * Sonraki bölümde
