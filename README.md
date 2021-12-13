@@ -7,7 +7,7 @@ Kurulum için;
 * Önce 1.sh dosyasını çalıştırınız.
 
 * İnternete bağlama için
-#iwctl
+[ICODE]#iwctl[/îcode]
 iwd# wsc wlan0 push-button 1.
 iwd# station scan
 iwd# station wlan0 SDDI_ISMI
