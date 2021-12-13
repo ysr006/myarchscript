@@ -31,6 +31,12 @@ Script ve gerekli dosyaları indirmek için
 
 Yazınız.
 
+myarchscript doyasını indirmek için
+
+#git clone https://github.com/ysr006/myarchscript
+
+yazınız.
+
 # 1.sh dosyasını çalıştırınız.
 
 # Bölümleme yapmak için  cfdisk ile arayüzle biçimlendirebilirsiniz. 
