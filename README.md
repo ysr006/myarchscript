@@ -99,3 +99,15 @@ kullanıcı oluşturmak için
 yazınız. siz dilerseniz archlinux yerine istediğiniz adı yazabilirsiniz.
 
 # masaüstü ortamı oluşturmak için 4.sh dosyasını çalıştırınız.
+
+arch-chroot komutundan çıkıs yapmak için
+
+#exit yazınız.
+
+#umount -R /mnt
+
+ile bağları kaldırdıktan sonra 
+
+#restart
+
+yazınız.
