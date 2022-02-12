@@ -1,7 +1,6 @@
 cd
 loadkeys trq
 timedatectl set-ntp true
-cd
 mkdir -p /mnt/boot
 mkdir -p /mnt/boot/efi
 mkfs.fat -F 32 /dev/sda1
