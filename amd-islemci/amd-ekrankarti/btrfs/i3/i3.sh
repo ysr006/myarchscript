@@ -30,3 +30,6 @@ systemctl start NetworkManager
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 mkinitcpio -P
+pacman -S xf86-video-ati xorg lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xfce4
+systemctl enable lightdm
+rm -rf myarchscript
