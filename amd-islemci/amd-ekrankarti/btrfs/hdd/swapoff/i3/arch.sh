@@ -22,9 +22,11 @@ cp -r myarchscript /mnt
 arch-chroot /mnt
 ln -sf /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
 hwclock --systohc
+echo "tr_TR.UTF-8 UTF-8" >> /etc/locale.gen
+echo "tr_TR ISO-8859-9" >> /etclocale.gen
+locale-gen
 echo "LANG=tr_TR.UTF-8" >> /etc/locale.conf
 echo "KEYMAP=trq" >> /etc/vconsole.conf
-locale-gen
 echo "archlinux" >> /etc/hostname
 echo "127.0.0.1   localhost" >> /etc/hosts
 echo "::1         localhost" >> /etc/hosts
