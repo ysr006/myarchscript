@@ -41,6 +41,6 @@ systemctl start cups
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 mkinitcpio -P
-pacman -S xf86-video-ati xf86-video-amdgpu xorg lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xfce4 xfce4-goodies
-systemctl enable lightdm
+pacman -S xf86-video-ati xf86-video-amdgpu xorg sddm plasma kde-applications
+systemctl enable sddm
 rm -rf myarchscript
