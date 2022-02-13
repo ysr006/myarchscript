@@ -93,6 +93,9 @@ yazınız. siz dilerseniz archlinux yerine istediğiniz adı yazabilirsiniz.srch
 
 yazınız.
 
+#passwd archlinux (archlinux yerine kendi kullanıcı adınızı yazınız.)
+komutu ile kullanıcı için şifre oluşturun.
+
 
 arch-chroot komutundan çıkıs yapmak için
 
