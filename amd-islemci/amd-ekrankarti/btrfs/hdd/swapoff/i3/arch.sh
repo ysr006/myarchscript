@@ -17,7 +17,7 @@ mount -o noatime,compress=zstd,subvol=@home /dev/sda2 /mnt/home
 mount -o noatime,compress=zstd,subvol=@ /dev/sda2 /mnt/var
 mount /dev/sda1 /mnt/boot/efi
 genfstab -U /mnt >> /mnt/etc/fstab
-pacstrap /mnt base base-devel linux linux-firmware amd-ucode networkmanager nano sh
+pacstrap /mnt base base-devel linux linux-headers linux-firmware amd-ucode networkmanager nano sh sudo
 cp -r myarchscript /mnt
 arch-chroot /mnt
 ln -sf /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
@@ -28,13 +28,17 @@ locale-gen
 echo "archlinux" >> /etc/hostname
 echo "127.0.0.1   localhost" >> /etc/hosts
 echo "::1         localhost" >> /etc/hosts
-echo "127.0.1.1   archlinux.localdomain  archlinux"
-pacman -S network-manager-applet pulseaudio pavucontrol volumeicon sudo grub os-prober
+echo "127.0.1.1   archlinux.localdomain  archlinux" >> /etc/hosts
+pacman -S grub grub-btrfs os-prober efibootmgr dosfstools mtools dialog wpa_supplicant network-manager-applet bluez-utils cups xdg-utils xdg-user-dirs pulseaudio alsa-utils gvfs
 systemctl enable NetworkManager
 systemctl start NetworkManager
+systemctl enable bluetooth.service
+systemctl start bluetooth.service
+systemctl enable cups
+systemctl start cups
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 mkinitcpio -P
-pacman -S xf86-video-ati xorg lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xfce4
+pacman -S xf86-video-ati xf86-video-amdgpu xorg lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings i3
 systemctl enable lightdm
 rm -rf myarchscript
