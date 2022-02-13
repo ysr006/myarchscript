@@ -23,7 +23,7 @@ arch-chroot /mnt
 ln -sf /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
 hwclock --systohc
 echo "tr_TR.UTF-8 UTF-8" >> /etc/locale.gen
-echo "tr_TR ISO-8859-9" >> /etclocale.gen
+echo "tr_TR ISO-8859-9" >> /etc/locale.gen
 locale-gen
 echo "LANG=tr_TR.UTF-8" >> /etc/locale.conf
 echo "KEYMAP=trq" >> /etc/vconsole.conf
