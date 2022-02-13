@@ -33,11 +33,8 @@ echo "::1         localhost" >> /etc/hosts
 echo "127.0.1.1   archlinux.localdomain  archlinux" >> /etc/hosts
 pacman -S grub grub-btrfs os-prober efibootmgr dosfstools mtools dialog wpa_supplicant network-manager-applet bluez-utils cups xdg-utils xdg-user-dirs pulseaudio alsa-utils gvfs
 systemctl enable NetworkManager
-systemctl start NetworkManager
 systemctl enable bluetooth.service
-systemctl start bluetooth.service
 systemctl enable cups
-systemctl start cups
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 mkinitcpio -P
