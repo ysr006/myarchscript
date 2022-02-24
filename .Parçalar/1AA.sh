@@ -2,7 +2,7 @@ cd
 loadkeys trq
 timedatectl set-ntp true
 mkfs.fat -F 32 /dev/sda1
-mkfs.btrfs /dev/sda2
+mkfs.btrfs -f /dev/sda2
 mount /dev/sda2 /mnt
 btrfs subvolume create /mnt/@
 btrfs subvolume create /mnt/@home
