@@ -10,10 +10,10 @@ btrfs subvolume create /mnt/@home
 btrfs subvolume create /mnt/@var
 mkdir -p /mnt/boot
 mkdir -p /mnt/boot/efi
-mkdir -p /mnt/home
-mkdir -p /mnt/var
 umount -R /mnt
 mount -o noatime,compress=zstd,subvol=@ /dev/sda3 /mnt
+mkdir -p /mnt/home
+mkdir -p /mnt/var
 mount -o noatime,compress=zstd,subvol=@home /dev/sda3 /mnt/home
 mount -o noatime,compress=zstd,subvol=@var /dev/sda3 /mnt/var
 mount /dev/sda1 /mnt/boot/efi
