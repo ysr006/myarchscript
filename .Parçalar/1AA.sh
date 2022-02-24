@@ -9,9 +9,9 @@ mount /dev/sda2 /mnt
 btrfs subvolume create /mnt/@
 btrfs subvolume create /mnt/@home
 btrfs subvolume create /mnt/@var
-umount -R /mnt
 mkdir -p /mnt/home
 mkdir -p /mnt/var
+umount -R /mnt
 mount -o noatime,compress=zstd,subvol=@ /dev/sda2 /mnt
 mount -o noatime,compress=zstd,subvol=@home /dev/sda2 /mnt/home
 mount -o noatime,compress=zstd,subvol=@ /dev/sda2 /mnt/var
