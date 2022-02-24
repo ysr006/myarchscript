@@ -3,7 +3,7 @@ loadkeys trq
 timedatectl set-ntp true
 mkfs.fat -F 32 /dev/sda1
 mkswap /dev/sda2
-mkfs.btrfs /dev/sda3
+mkfs.btrfs -f /dev/sda3
 mount /dev/sda3 /mnt
 btrfs subvolume create /mnt/@
 btrfs subvolume create /mnt/@home
