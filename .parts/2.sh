@@ -1,4 +1,5 @@
 cd
+cp myarchscript /mnt
 arch-chroot /mnt
 ln -sf /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
 hwclock --systohc
